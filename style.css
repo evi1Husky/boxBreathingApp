@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+* {
+  border: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Andale Mono", monospace;
+}
+menu,
+ol,
+ul {
+  padding-left: 0;
+}
+article ol,
+article ul {
+  list-style-position: inside;
+}
+
+body {
+  background: rgb(35, 40, 47);
+  transition: background-color 3s;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 575px) and (max-width: 767.98px) {}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {}
